@@ -171,7 +171,7 @@ def main():
             print()
 
         # Runs if the player is out of attempts. Gives the secret word. 
-            if num_attempts == 0:
+            if game_over(num_attempts):
                 print("No more attempts remaining")
                 print("Better luck next time!")
                 print(f"The secret word was: {secret_word}")
