@@ -30,3 +30,14 @@ def test_incorrect_word():
     word = random.choice(words)
     guess = "trouble"
     assert guess != word
+
+def test_num_attempts():
+    num_attempts = 5
+    for i in range(5):
+        num_attempts = num_attempts - 1
+    assert num_attempts == 0
+
+
+
+    
+    

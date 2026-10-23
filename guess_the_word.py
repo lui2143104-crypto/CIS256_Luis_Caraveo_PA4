@@ -3,7 +3,7 @@
 # 10/22/2026
 #Python Word Guessing Game
 
-
+# Our word list, contains the random words to be generated.
 import random
 
 words = [
@@ -98,6 +98,9 @@ def guess_word(secret_word, letter_used):
     return display
 # Here we display the begining of the secret word with all the letters hidden
 # As underscores.
+
+def game_over(num_attempts):
+    return num_attempts <= 0
 
 
 def main():
