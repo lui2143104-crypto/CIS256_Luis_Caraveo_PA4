@@ -37,6 +37,7 @@ def test_num_attempts():
         num_attempts = num_attempts - 1
     assert num_attempts == 0
 
+# The game over function is tested. A function was created for this specific test.
 def test_game_over():
     assert game_over(0) == True
     assert game_over(1) == False
