@@ -30,12 +30,18 @@ def test_incorrect_word():
     word = random.choice(words)
     guess = "trouble"
     assert guess != word
-
+# does subtracting attempts result in zero remaining. 
 def test_num_attempts():
     num_attempts = 5
     for i in range(5):
         num_attempts = num_attempts - 1
     assert num_attempts == 0
+
+def test_game_over():
+    assert game_over(0) == True
+    assert game_over(1) == False
+
+from guess_the_word import game_over
 
 
 
